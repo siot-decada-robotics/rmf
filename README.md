@@ -5,6 +5,15 @@
 The OpenRMF platform for multi-fleet robot management.
 
 ---
+
+## Changes to the original repo
+1. Please remove all ROS 2 Foxy RMF apt packages
+```bash
+sudo apt remove '^ros-foxy-rmf-.*' -y
+```
+2. For demonstrations/rmf_demos, we change from pointing at open-rmf/rmf_demos repo to pointing at siot-decada-robotics/rmf_demos repo.
+---
+
 ## Install ROS 2 Foxy
 
 First, please follow the installation instructions for ROS 2 Foxy.
@@ -46,7 +55,7 @@ Setup a new ROS 2 workspace and pull in the demo repositories using `vcs`,
 ```bash
 mkdir -p ~/rmf_ws/src
 cd ~/rmf_ws
-wget https://raw.githubusercontent.com/open-rmf/rmf/main/rmf.repos
+wget https://raw.githubusercontent.com/siot-decada-robotics/rmf/siot/rmf.repos
 vcs import src < rmf.repos
 ```
 
