@@ -78,7 +78,7 @@ As a result, the first build can take a very long time depending on the server l
 
 ## Run RMF Demos
 
-Demonstrations of OpenRMF are shown in [rmf_demos](https://github.com/open-rmf/rmf_demos/).
+Demonstrations of OpenRMF are shown in [rmf_demos](https://github.com/siot-decada-robotics/rmf_demos/).
 
 
 
