@@ -1,6 +1,6 @@
 
 # DECADA - Robotics - Middleware Framework (RMF)
-The OpenRMF platform from open-rmf for multi-fleet robot management.
+The OpenRMF platform from open-rmf for multi-fleet robot management, modified for Decada Robotics.
 
 ---
 ## Install ROS 2 Galactic
