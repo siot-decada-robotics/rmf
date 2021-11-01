@@ -1,11 +1,6 @@
-# Robotics Middleware Framework (RMF)
 
-![](media/rmf_banner.png)
-
-![](https://github.com/open-rmf/rmf/workflows/build/badge.svg)
-![Nightly](https://github.com/open-rmf/rmf/workflows/nightly/badge.svg)
-
-The OpenRMF platform for multi-fleet robot management.
+# DECADA - Robotics - Middleware Framework (RMF)
+The OpenRMF platform from open-rmf for multi-fleet robot management.
 
 ---
 ## Install ROS 2 Galactic
@@ -24,23 +19,7 @@ sudo sh -c 'echo "deb http://packages.osrfoundation.org/gazebo/ubuntu-stable `ls
 wget https://packages.osrfoundation.org/gazebo.key -O - | sudo apt-key add -
 ```
 
-## Binary install
-
-OpenRMF binary packages are available for Ubuntu Focal 20.04 for the `Foxy`, `Galactic` and `Rolling` releases of ROS 2. Most OpenRMF packages have the prefix `rmf` on their name, therefore, you can find them by them by searching for the pattern `ros-<ro2distro>-rmf`, e.g., for galatic it would be:
-
-```bash
-apt-cache search ros-galactic-rmf
-```
-
-### RMF Demos
-
-A good way to install the `rmf` set of packages in one go is to install the one of the main [RMF Demos](https://github.com/open-rmf/rmf_demos) packages. This will pull all the rest of the OpenRMF packages as a dependency. The core of RMF demos is contained on the `rmf_demos` package. However, if you want to install it with simulation support, you should install the `rmf_demos_gz` or `rmf_demos_ign` package which come with gazebo or ignition support respectively. As an example, to install the ROS 2 Galactic release with gazebo support package, you would run:
-
-```bash
-sudo apt install ros-galactic-rmf-demos-gz
-```
-
-## Building from sources
+## Building from sources (what we did)
 
 If you want to get the latest developments you might want to install from sources and compile OpenRMF yourself.
 
@@ -101,25 +80,7 @@ As a result, the first build can take a very long time depending on the server l
 
 Demonstrations of OpenRMF are shown in [rmf_demos](https://github.com/open-rmf/rmf_demos/).
 
-### Docker Containers
-Alternatively, you can run RMF Demos by using [docker](https://docs.docker.com/engine/install/ubuntu/).
 
-Pull docker image from `open-rmf/rmf` github registry (setup refer [here](https://docs.github.com/en/free-pro-team@latest/packages/using-github-packages-with-your-projects-ecosystem/configuring-docker-for-use-with-github-packages#authenticating-with-a-personal-access-token)).
-
-```bash
-docker pull ghcr.io/open-rmf/rmf/rmf_demos:latest
-docker tag ghcr.io/open-rmf/rmf/rmf_demos:latest rmf:latest
-```
-
-Run it!
-
-```bash
-
-docker run -it --network host rmf:latest bash -c "export ROS_DOMAIN_ID=9; ros2 launch rmf_demos_gz office.launch.xml headless:=1"
-```
-This will run `rmf_demos` in headless mode. Open [this link](https://open-rmf.github.io/rmf-panel-js/) with a browser to start a task.
-
-(Experimental) User can also run `rmf_demos` in “non-headless” graphical form, via [rocker](https://github.com/osrf/rocker).
 
 ## Roadmap
 
