@@ -22,13 +22,11 @@ repositories:
   rmf/rmf_traffic:
     type: git
     url: https://github.com/open-rmf/rmf_traffic.git
-    version: main
-    reference: ba5bc40dd37ec7a2eb002a2a8ef080dec3ac50ca
+    version: ba5bc40dd37ec7a2eb002a2a8ef080dec3ac50ca
   rmf/rmf_utils:
     type: git
     url: https://github.com/open-rmf/rmf_utils.git
-    version: main
-    reference: c7c93965026aaa95b07b09555ebefeccbf9f0ddf
+    version: c7c93965026aaa95b07b09555ebefeccbf9f0ddf
   rmf/ament_cmake_catch2:
     type: git
     url: https://github.com/open-rmf/ament_cmake_catch2.git
@@ -64,13 +62,11 @@ repositories:
   thirdparty/nlohmann_json_schema_validator_vendor:
     type: git
     url: https://github.com/open-rmf/nlohmann_json_schema_validator_vendor.git
-    version: main
-    reference: a4ba65bd2d19b9d9d9651fef867be11d3edcdad9
+    version: a4ba65bd2d19b9d9d9651fef867be11d3edcdad9
   thirdparty/pybind11_json_vendor:
     type: git
     url: https://github.com/open-rmf/pybind11_json_vendor.git
-    version: main
-    reference: 40fe607ec6b3ad9c845a3cc8ddd10649bcc9b717
+    version: 40fe607ec6b3ad9c845a3cc8ddd10649bcc9b717
   trl:
     type: git
     url: https://github.com/siot-decada-robotics/trl.git
