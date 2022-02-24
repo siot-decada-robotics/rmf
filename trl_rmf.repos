@@ -70,4 +70,4 @@ repositories:
   trl:
     type: git
     url: https://github.com/siot-decada-robotics/trl.git
-    version: main
+    version: samuelrawrs/bookshelf_task
