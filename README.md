@@ -54,7 +54,7 @@ Setup a new ROS 2 workspace and pull in the demo repositories using `vcs`,
 mkdir -p ~/rmf_ws/src
 cd ~/rmf_ws
 wget https://raw.githubusercontent.com/siot-decada-robotics/rmf/siot/trl_rmf.repos
-vcs import src < trl.repos
+vcs import src < trl_rmf.repos
 ```
 
 Ensure all ROS 2 prerequisites are fulfilled,
